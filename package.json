@@ -1,0 +1,52 @@
+{
+  "name": "node-red-contrib-got",
+  "version": "0.1.0",
+  "description": "A Node-RED Got node, for simplified HTTP/HTTPS requests",
+  "main": "src/got.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joakimbeng/node-red-contrib-got.git"
+  },
+  "keywords": [
+    "node-red",
+    "http",
+    "https",
+    "get",
+    "got",
+    "request"
+  ],
+  "author": {
+    "name": "Joakim Carlstein",
+    "email": "joakim@beng.se",
+    "url": "http://joakim.beng.se"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joakimbeng/node-red-contrib-got/issues"
+  },
+  "homepage": "https://github.com/joakimbeng/node-red-contrib-got#readme",
+  "xo": {
+    "envs": [
+      "node"
+    ]
+  },
+  "node-red": {
+    "nodes": {
+      "got": "src/got.js"
+    }
+  },
+  "devDependencies": {
+    "ava": "^0.13.0",
+    "nock": "^7.7.2",
+    "xo": "^0.13.0"
+  },
+  "dependencies": {
+    "got": "^6.2.0"
+  }
+}
