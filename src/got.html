@@ -1,37 +1,37 @@
 <script type="text/javascript">
-  RED.nodes.registerType('got',{
-    category: 'function',
-    color: '#28AFB0',
-    defaults: {
-      name: {
+	RED.nodes.registerType('got',{
+		category: 'function',
+		color: '#28AFB0',
+		defaults: {
+			name: {
 				value: ''
 			},
 			timeout: {
 				value: 30 * 1000
 			}
-    },
-    inputs: 1,
-    outputs: 1,
-    icon: 'white-globe.png',
-    label: function() {
-      return this.name || 'got';
-    }
-  });
+		},
+		inputs: 1,
+		outputs: 1,
+		icon: 'white-globe.png',
+		label: function() {
+			return this.name || 'got';
+		}
+	});
 </script>
 
 <script type="text/x-red" data-template-name="got">
-  <div class="form-row">
-    <label for="node-input-timeout"><i class="fa fa-hourglass-end"></i> Timeout (ms)</label>
-    <input type="text" id="node-input-timeout" placeholder="30000">
-  </div>
-  <div class="form-row">
-    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
-    <input type="text" id="node-input-name" placeholder="Name">
-  </div>
+	<div class="form-row">
+		<label for="node-input-timeout"><i class="fa fa-hourglass-end"></i> Timeout (ms)</label>
+		<input type="text" id="node-input-timeout" placeholder="30000">
+	</div>
+	<div class="form-row">
+		<label for="node-input-name"><i class="icon-tag"></i> Name</label>
+		<input type="text" id="node-input-name" placeholder="Name">
+	</div>
 </script>
 
 <script type="text/x-red" data-help-name="got">
-  <p>
+	<p>
 		A <a href="https://github.com/sindresorhus/got">Got</a> HTTP request node.
 	</p>
 	<p>
