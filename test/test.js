@@ -144,6 +144,6 @@ test('errors when other non status code error occur', async t => {
 		await receiver;
 		t.fail('Should have thrown!');
 	} catch (err) {
-		t.ok(/options\.body/.test(err.message));
+		t.ok(err.name === 'RequestError');
 	}
 });
